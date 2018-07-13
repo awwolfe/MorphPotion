@@ -1,0 +1,17 @@
+[
+	{
+		"modid": "morphpotion",
+  		"name": "morphpotion",
+  		"description": "Uses metamorph as potions",
+  		"version": "${version}",
+  		"mcversion": "${mcversion}",
+  		"url": "",
+  		"updateJSON": "",
+  		"updateUrl": "",
+  		"authorList": ["Dad"],
+  		"credits": "",
+		"logoFile": "",
+		"screenshots": [],
+		"dependencies": ["metamorph"]
+	}
+]

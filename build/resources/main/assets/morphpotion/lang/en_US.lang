@@ -1,0 +1,156 @@
+itemGroup.morphpotion=Morph Potions
+
+#config
+morphpotion.config.title=Configure Morph Potions
+
+#Potions
+potion.effect.transform_pig_type=Pig Transform Potion
+potion.effect.transform_chicken_type=Chicken Transform Potion
+potion.effect.transform_bat_type=Bat Transform Potion
+potion.effect.transform_spider_type=Spider Transform Potion
+potion.effect.transform_cave_spider_type=Cave Spider Transform Potion
+potion.effect.transform_cow_type=Cow Transform Potion
+potion.effect.transform_donkey_type=Donkey Transform Potion
+potion.effect.transform_horse_type=Horse Transform Potion
+potion.effect.transform_ocelot_type=Ocelot Transform Potion
+potion.effect.transform_polar_bear_type=Polar Bear Transform Potion
+potion.effect.transform_rabbit_type=Rabbit Transform Potion
+potion.effect.transform_sheep_type=Sheep Transform Potion
+potion.effect.transform_squid_type=Squid Transform Potion
+potion.effect.transform_wolf_type=Wolf Transform Potion
+potion.effect.transform_enderman_type=Enderman Transform Potion
+potion.effect.transform_snowman_type=Snowman Transform Potion
+potion.effect.transform_creeper_type=Creeper Transform Potion
+potion.effect.transform_villager_type=Villager Transform Potion
+potion.effect.transform_villager_golem_type=Villager Golem Transform Potion
+potion.effect.transform_blaze_type=Blaze Transform Potion
+potion.effect.transform_ghast_type=Ghast Transform Potion
+potion.effect.transform_skeleton_type=Skeleton Transform Potion
+potion.effect.transform_wither_skeleton_type=Wither Skeleton Transform Potion
+potion.effect.transform_guardian_type=Guardian Transform Potion
+potion.effect.transform_guardian_elder_type=Elder Guardian Transform Potion
+potion.effect.transform_magma_cube_type=Magma Cube Transform Potion
+potion.effect.transform_slime_type=Slime Transform Potion
+potion.effect.transform_husk_type=Husk Transform Potion
+potion.effect.transform_zombie_type=Zombie Transform Potion
+potion.effect.transform_parrot_type=Parrot Transform Potion
+potion.effect.transform_shulker_type=Shulker Transform Potion
+potion.effect.transform_demorph_type=Demorph Potion
+
+
+
+potion.transform_pig=Oink Oink
+potion.transform_chicken=Cluck Cluck
+potion.transform_bat=I'm Batman
+potion.transform_spider=Itsy Bitsy
+potion.transform_cave_spider=Itsy Bitsy with Bite
+potion.transform_cow=Moo
+potion.transform_donkey=Eeeooor
+potion.transform_horse=Giddy up
+potion.transform_ocelot=Meow
+potion.transform_polar_bear=Growwwl
+potion.transform_rabbit=What's up Doc
+potion.transform_sheep=Yep. Your a sheep
+potion.transform_squid=Just keep swimming
+potion.transform_wolf=Redundancy incarnate
+potion.transform_enderman=Don't look at me
+potion.transform_snowman=I like Summer
+potion.transform_creeper=Come a little closer
+potion.transform_villager=Got a trade
+potion.transform_villager_golem=Me tough
+potion.transform_blaze=Fire,fire,fire, FIRE
+potion.transform_ghast=I'm sad
+potion.transform_skeleton=Archery rocks
+potion.transform_wither_skeleton=Melee rocks
+potion.transform_guardian=Guard this
+potion.transform_guardian_elder=I'm almost a boss
+potion.transform_magma_cube=Got Lava?
+potion.transform_slime=Jump
+potion.transform_husk=I'm thristy
+potion.transform_zombie=...Brains...
+potion.transform_parrot=Wanna Cracker
+potion.transform_shulker=Peek-a-boo
+potion.demorph=Normal is Overrated
+
+
+splash_potion.effect.transform_pig_type=Pig Transform Splash Potion
+splash_potion.effect.transform_chicken_type=Chicken Transform Splash Potion
+splash_potion.effect.transform_bat_type=Bat Transform Splash Potion
+splash_potion.effect.transform_spider_type=Spider Transform Splash Potion
+splash_potion.effect.transform_cave_spider_type=Cave Spider Transform Splash Potion
+splash_potion.effect.transform_cow_type=Cow Transform Splash Potion
+splash_potion.effect.transform_donkey_type=Donkey Transform Splash Potion
+splash_potion.effect.transform_horse_type=Horse Transform Splash Potion
+splash_potion.effect.transform_ocelot_type=Ocelot Transform Splash Potion
+splash_potion.effect.transform_polar_bear_type=Polar Bear Transform Splash Potion
+splash_potion.effect.transform_rabbit_type=Rabbit Transform Splash Potion
+splash_potion.effect.transform_sheep_type=Sheep Transform Splash Potion
+splash_potion.effect.transform_squid_type=Squid Transform Splash Potion
+splash_potion.effect.transform_wolf_type=Wolf Transform Splash Potion
+splash_potion.effect.transform_enderman_type=Enderman Transform Splash Potion
+splash_potion.effect.transform_snowman_type=Snowman Transform Splash Potion
+splash_potion.effect.transform_creeper_type=Creeper Transform Splash Potion
+splash_potion.effect.transform_villager_type=Villager Transform Splash Potion
+splash_potion.effect.transform_villager_golem_type=Villager Golem Transform Splash Potion
+splash_potion.effect.transform_blaze_type=Blaze Transform Splash Potion
+splash_potion.effect.transform_ghast_type=Ghast Transform Splash Potion
+splash_potion.effect.transform_skeleton_type=Skeleton Transform Splash Potion
+splash_potion.effect.transform_wither_skeleton_type=Wither Skeleton Transform Splash Potion
+splash_potion.effect.transform_guardian_type=Guardian Transform Splash Potion
+splash_potion.effect.transform_guardian_elder_type=Elder Guardian Transform Splash Potion
+splash_potion.effect.transform_magma_cube_type=Magma Cube Transform Splash Potion
+splash_potion.effect.transform_slime_type=Slime Transform Splash Potion
+splash_potion.effect.transform_husk_type=Husk Transform Splash Potion
+splash_potion.effect.transform_zombie_type=Zombie Transform Splash Potion
+splash_potion.effect.transform_parrot_type=Parrot Transform Splash Potion
+splash_potion.effect.transform_shulker_type=Shulker Transform Splash Potion
+splash_potion.effect.transform_freeze_resistance_type=Freeze Resistance Splash Potion
+splash_potion.effect.transform_demorph_type=Demorph Splash Potion
+
+lingering_potion.effect.transform_pig_type=Lingering Pig Transform Potion
+lingering_potion.effect.transform_chicken_type=Lingering Chicken Transform Potion
+lingering_potion.effect.transform_bat_type=Lingering Bat Transform Potion
+lingering_potion.effect.transform_spider_type=Lingering Spider Transform Potion
+lingering_potion.effect.transform_cave_spider_type=Lingering Cave Spider Transform Potion
+lingering_potion.effect.transform_cow_type=Lingering Cow Transform Potion
+lingering_potion.effect.transform_donkey_type=Lingering Donkey Transform Potion
+lingering_potion.effect.transform_horse_type=Lingering Horse Transform Potion
+lingering_potion.effect.transform_ocelot_type=Lingering Ocelot Transform Potion
+lingering_potion.effect.transform_polar_bear_type=Lingering Polar Bear Transform Potion
+lingering_potion.effect.transform_rabbit_type=Lingering Rabbit Transform Potion
+lingering_potion.effect.transform_sheep_type=Lingering Sheep Transform Potion
+lingering_potion.effect.transform_squid_type=Lingering Squid Transform Potion
+lingering_potion.effect.transform_wolf_type=Lingering Wolf Transform Potion
+lingering_potion.effect.transform_enderman_type=Lingering Enderman Transform Potion
+lingering_potion.effect.transform_snowman_type=Lingering Snowman Transform Potion
+lingering_potion.effect.transform_creeper_type=Lingering Creeper Transform Potion
+lingering_potion.effect.transform_villager_type=Lingering Villager Transform Potion
+lingering_potion.effect.transform_villager_golem_type=Lingering Villager Golem Transform Potion
+lingering_potion.effect.transform_blaze_type=Lingering Blaze Transform Potion
+lingering_potion.effect.transform_ghast_type=Lingering Ghast Transform Potion
+lingering_potion.effect.transform_skeleton_type=Lingering Skeleton Transform Potion
+lingering_potion.effect.transform_wither_skeleton_type=Lingering Wither Skeleton Transform Potion
+lingering_potion.effect.transform_guardian_type=Lingering Guardian Transform Potion
+lingering_potion.effect.transform_guardian_elder_type=Lingering Elder Guardian Transform Potion
+lingering_potion.effect.transform_magma_cube_type=Lingering Magma Cube Transform Potion
+lingering_potion.effect.transform_slime_type=Lingering Slime Transform Potion
+lingering_potion.effect.transform_husk_type=Lingering Husk Transform Potion
+lingering_potion.effect.transform_zombie_type=Lingering Zombie Transform Potion
+lingering_potion.effect.transform_parrot_type=Lingering Parrot Transform Potion
+lingering_potion.effect.transform_shulker_type=Lingering Shulker Transform Potion
+lingering_potion.effect.transform_demorph_type=Lingering Demorph Potion
+
+
+potion.effect.freeze_resistance_type=Potion of Freeze Resistance
+potion.freeze_resistance=Freeze Resistance
+
+#items
+item.item_vial_empty.name=Empty Vial
+item.item_vial_full.name=Full Vial
+item.item_polar_bear_hide.name=Polar Bear Hide
+item.item_wolf_hide.name=Wolf Hide
+item.item_ocelot_hide.name=Ocelot Hide
+item.item_horse_hide.name=Horse Hide
+item.item_donkey_hide.name=Donkey Hide
+item.item_bat_wing.name=Bat Wing
+item.item_parrot_feather.name=Parrot Feather
