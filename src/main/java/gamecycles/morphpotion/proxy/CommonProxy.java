@@ -6,6 +6,7 @@ import gamecycles.morphpotion.capabilities.MorphingMOBStorage;
 import gamecycles.morphpotion.events.GuiHandler;
 import gamecycles.morphpotion.init.ModCrafting;
 import gamecycles.morphpotion.init.ModItems;
+import gamecycles.morphpotion.init.ModMetaMorph;
 import gamecycles.morphpotion.init.ModPotions;
 
 import net.minecraftforge.common.MinecraftForge;
@@ -19,6 +20,7 @@ public class CommonProxy {
         ModItems.init();
         ModPotions.init();
         ModCrafting.init();
+
 	}
 	
 	public void init(FMLInitializationEvent event) {
@@ -26,7 +28,8 @@ public class CommonProxy {
         MinecraftForge.EVENT_BUS.register(new gamecycles.morphpotion.events.CapabilityHandler());
         MinecraftForge.EVENT_BUS.register(new gamecycles.morphpotion.events.EntityDropHandler());
         MinecraftForge.EVENT_BUS.register(new GuiHandler());
-        
+
+
         CapabilityManager.INSTANCE.register(IMorphingMOB.class, new MorphingMOBStorage(), MorphingMOB.class);
 	}
 }
