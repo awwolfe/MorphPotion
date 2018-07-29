@@ -5,6 +5,7 @@ import gamecycles.morphpotion.MorphPotionMod;
 import gamecycles.morphpotion.potion.PotionFreezeResistance;
 import gamecycles.morphpotion.potion.PotionTransform;
 import mchorse.metamorph.Metamorph;
+import net.minecraft.init.PotionTypes;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.potion.PotionType;
@@ -12,6 +13,10 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Random;
 
 public class ModPotions {
 	
@@ -90,7 +95,9 @@ public class ModPotions {
     public static PotionType transform_parrot_type;
     public static PotionType transform_shulker_type;
     public static PotionType demorphMOB_type;
-    
+
+
+    public static ArrayList<PotionTypeEntry> list=new ArrayList<PotionTypeEntry>();
     
     public static void  init(){
     	boolean waddles=false;
@@ -148,42 +155,42 @@ public class ModPotions {
 	      //  thirst = registerPotion("thirst", new PotionThirst(26).setPotionName("potion.thirst"));
 	      //  cold_resistance = registerPotion("cold_resistance", new PotionColdResistance(27).setPotionName("potion.cold_resistance").setBeneficial());
 	      //  heat_resistance = registerPotion("heat_resistance", new PotionHeatResistance(28).setPotionName("potion.heat_resistance").setBeneficial());
-		 demorphMOB_type=registerPotionType("transform_demorph_type",new PotionType(new PotionEffect [] {new PotionEffect(demorphMOB,POTION_DURATION,0,true,true)}));
-	     freeze_resistance_type = registerPotionType("freeze_resistance_type", new PotionType(new PotionEffect[] {new PotionEffect(freeze_resistance, POTION_DURATION,0,true,false)}));
-	     transform_polar_bear_type=registerPotionType("transform_polar_bear_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_polar_bear,POTION_DURATION,0,true,true)}));
-	     transform_chicken_type=registerPotionType("transform_chicken_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_chicken,POTION_DURATION,0,true,true)}));
-	     transform_cow_type=registerPotionType("transform_cow_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_cow,POTION_DURATION,0,true,true)}));
-	     transform_bat_type=registerPotionType("transform_bat_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_bat,POTION_DURATION,0,true,true)}));
-	     transform_cave_spider_type=registerPotionType("transform_cave_spider_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_cave_spider,POTION_DURATION,0,true,true)}));
-	     transform_spider_type=registerPotionType("transform_spider_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_spider,POTION_DURATION,0,true,true)}));
-	     transform_donkey_type=registerPotionType("transform_donkey_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_donkey,POTION_DURATION,0,true,true)}));
-	     transform_horse_type=registerPotionType("transform_horse_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_horse,POTION_DURATION,0,true,true)}));
-	     transform_ocelot_type=registerPotionType("transform_ocelot_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_ocelot,POTION_DURATION,0,true,true)}));
-	     transform_rabbit_type=registerPotionType("transform_rabbit_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_rabbit,POTION_DURATION,0,true,true)}));
-	     transform_sheep_type=registerPotionType("transform_sheep_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_sheep,POTION_DURATION,0,true,true)}));
-	     transform_squid_type=registerPotionType("transform_squid_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_squid,POTION_DURATION,0,true,true)}));
-	     transform_wolf_type=registerPotionType("transform_wolf_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_wolf,POTION_DURATION,0,true,true)}));
-	     transform_enderman_type=registerPotionType("transform_enderman_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_enderman,POTION_DURATION,0,true,true)}));
-	     transform_snowman_type=registerPotionType("transform_snowman_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_snowman,POTION_DURATION,0,true,true)}));
-	     transform_creeper_type=registerPotionType("transform_creeper_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_creeper,POTION_DURATION,0,true,true)}));
-	     transform_villager_type=registerPotionType("transform_villager_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_villager,POTION_DURATION,0,true,true)}));
-	     transform_villager_golem_type=registerPotionType("transform_villager_golem_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_villager_golem,POTION_DURATION,0,true,true)}));
-	     transform_blaze_type=registerPotionType("transform_blaze_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_blaze,POTION_DURATION,0,true,true)}));
-	     transform_ghast_type=registerPotionType("transform_ghast_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_ghast,POTION_DURATION,0,true,true)}));
-	     transform_skeleton_type=registerPotionType("transform_skeleton_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_skeleton,POTION_DURATION,0,true,true)}));
-	     transform_guardian_type=registerPotionType("transform_guardian_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_guardian,POTION_DURATION,0,true,true)}));
-	     transform_guardian_elder_type=registerPotionType("transform_guardian_elder_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_guardian_elder,POTION_DURATION,0,true,true)}));
-	     transform_magma_cube_type=registerPotionType("transform_magma_cube_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_magma_cube,POTION_DURATION,0,true,true)}));
-	     transform_slime_type=registerPotionType("transform_slime_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_slime,POTION_DURATION,0,true,true)}));
-	     transform_husk_type=registerPotionType("transform_husk_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_husk,POTION_DURATION,0,true,true)}));
-	     transform_zombie_type=registerPotionType("transform_zombie_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_zombie,POTION_DURATION,0,true,true)}));
-	     transform_pig_type=registerPotionType("transform_pig_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_pig,POTION_DURATION,0,true,true)}));
-	     transform_wither_skeleton_type=registerPotionType("transform_wither_skeleton_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_wither_skeleton,POTION_DURATION,0,true,true)}));
+		 demorphMOB_type=registerPotionType("transform_demorph_type",new PotionType(new PotionEffect [] {new PotionEffect(demorphMOB,POTION_DURATION,0,true,true)}),1);
+	     freeze_resistance_type = registerPotionType("freeze_resistance_type", new PotionType(new PotionEffect[] {new PotionEffect(freeze_resistance, POTION_DURATION,0,true,false)}),1);
+	     transform_polar_bear_type=registerPotionType("transform_polar_bear_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_polar_bear,POTION_DURATION,0,true,true)}),3);
+	     transform_chicken_type=registerPotionType("transform_chicken_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_chicken,POTION_DURATION,0,true,true)}),1);
+	     transform_cow_type=registerPotionType("transform_cow_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_cow,POTION_DURATION,0,true,true)}),1);
+	     transform_bat_type=registerPotionType("transform_bat_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_bat,POTION_DURATION,0,true,true)}),2);
+	     transform_cave_spider_type=registerPotionType("transform_cave_spider_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_cave_spider,POTION_DURATION,0,true,true)}),3);
+	     transform_spider_type=registerPotionType("transform_spider_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_spider,POTION_DURATION,0,true,true)}),2);
+	     transform_donkey_type=registerPotionType("transform_donkey_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_donkey,POTION_DURATION,0,true,true)}),2);
+	     transform_horse_type=registerPotionType("transform_horse_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_horse,POTION_DURATION,0,true,true)}),2);
+	     transform_ocelot_type=registerPotionType("transform_ocelot_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_ocelot,POTION_DURATION,0,true,true)}),2);
+	     transform_rabbit_type=registerPotionType("transform_rabbit_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_rabbit,POTION_DURATION,0,true,true)}),1);
+	     transform_sheep_type=registerPotionType("transform_sheep_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_sheep,POTION_DURATION,0,true,true)}),1);
+	     transform_squid_type=registerPotionType("transform_squid_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_squid,POTION_DURATION,0,true,true)}),3);
+	     transform_wolf_type=registerPotionType("transform_wolf_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_wolf,POTION_DURATION,0,true,true)}),2);
+	     transform_enderman_type=registerPotionType("transform_enderman_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_enderman,POTION_DURATION,0,true,true)}),3);
+	     transform_snowman_type=registerPotionType("transform_snowman_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_snowman,POTION_DURATION,0,true,true)}),2);
+	     transform_creeper_type=registerPotionType("transform_creeper_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_creeper,POTION_DURATION,0,true,true)}),2);
+	     transform_villager_type=registerPotionType("transform_villager_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_villager,POTION_DURATION,0,true,true)}),1);
+	     transform_villager_golem_type=registerPotionType("transform_villager_golem_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_villager_golem,POTION_DURATION,0,true,true)}),3);
+	     transform_blaze_type=registerPotionType("transform_blaze_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_blaze,POTION_DURATION,0,true,true)}),3);
+	     transform_ghast_type=registerPotionType("transform_ghast_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_ghast,POTION_DURATION,0,true,true)}),3);
+	     transform_skeleton_type=registerPotionType("transform_skeleton_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_skeleton,POTION_DURATION,0,true,true)}),2);
+	     transform_guardian_type=registerPotionType("transform_guardian_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_guardian,POTION_DURATION,0,true,true)}),3);
+	     transform_guardian_elder_type=registerPotionType("transform_guardian_elder_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_guardian_elder,POTION_DURATION,0,true,true)}),3);
+	     transform_magma_cube_type=registerPotionType("transform_magma_cube_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_magma_cube,POTION_DURATION,0,true,true)}),2);
+	     transform_slime_type=registerPotionType("transform_slime_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_slime,POTION_DURATION,0,true,true)}),1);
+	     transform_husk_type=registerPotionType("transform_husk_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_husk,POTION_DURATION,0,true,true)}),1);
+	     transform_zombie_type=registerPotionType("transform_zombie_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_zombie,POTION_DURATION,0,true,true)}),1);
+	     transform_pig_type=registerPotionType("transform_pig_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_pig,POTION_DURATION,0,true,true)}),1);
+	     transform_wither_skeleton_type=registerPotionType("transform_wither_skeleton_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_wither_skeleton,POTION_DURATION,0,true,true)}),2);
 	     if(waddles){
-	    	   transform_waddles_type=registerPotionType("transform_waddles_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_waddles,POTION_DURATION,0,true,true)}));
+	    	   transform_waddles_type=registerPotionType("transform_waddles_type",new PotionType(new PotionEffect [] {new PotionEffect(transform_waddles,POTION_DURATION,0,true,true)}),1);
 	       }
-	     transform_parrot_type=registerPotionType("transform_parrot_type",new PotionType(new PotionEffect[]{new PotionEffect(transform_parrot,POTION_DURATION,0,true,true)}));
-	     transform_shulker_type=registerPotionType("transform_shulker_type",new PotionType(new PotionEffect[]{new PotionEffect(transform_shulker,POTION_DURATION,0,true,true)}));
+	     transform_parrot_type=registerPotionType("transform_parrot_type",new PotionType(new PotionEffect[]{new PotionEffect(transform_parrot,POTION_DURATION,0,true,true)}),1);
+	     transform_shulker_type=registerPotionType("transform_shulker_type",new PotionType(new PotionEffect[]{new PotionEffect(transform_shulker,POTION_DURATION,0,true,true)}),3);
     }
     
     public static Potion registerPotion(String name, Potion potion)
@@ -195,11 +202,34 @@ public class ModPotions {
         return potion;
     }
     
-    public static PotionType registerPotionType(String name, PotionType potionType)
+    public static PotionType registerPotionType(String name, PotionType potionType,int level)
     {
     	potionType.setRegistryName(MorphPotionMod.modId,name);
     	ForgeRegistries.POTION_TYPES.register(potionType);
-        
+
+		list.add(new PotionTypeEntry(level,potionType));
+
         return potionType;
     }
+
+    public static PotionType getRandomPotion(int level, Random random){
+    	//build temp list
+	    ArrayList<PotionType> temp=new ArrayList<PotionType>();
+	    for (PotionTypeEntry entry:list) {
+	    	if(entry.level==level){
+	    		temp.add(entry.type);
+		    }
+
+	    }
+
+	    if(temp.size()>0){
+	    	int index=random.nextInt(temp.size());
+	    	return temp.get(index);
+	    }
+
+	    return PotionTypes.AWKWARD;
+    }
+
+
 }
+

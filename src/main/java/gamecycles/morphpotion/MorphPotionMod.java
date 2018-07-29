@@ -3,13 +3,20 @@ package gamecycles.morphpotion;
 import gamecycles.morphpotion.init.ModMetaMorph;
 import gamecycles.morphpotion.init.TabMorphPotion;
 import gamecycles.morphpotion.proxy.CommonProxy;
+import gamecycles.morphpotion.village.VillageTradeMagicMorphPotion1;
+import gamecycles.morphpotion.village.VillageTradeMagicMorphPotion2;
+import gamecycles.morphpotion.village.VillageTradeMagicMorphPotion3;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
+import net.minecraftforge.fml.common.registry.VillagerRegistry;
 
 
 @Mod(modid = MorphPotionMod.modId, name=MorphPotionMod.name, version=MorphPotionMod.version,dependencies=MorphPotionMod.DEPENDENCIES)
@@ -51,7 +58,22 @@ public class MorphPotionMod {
 		 
 		
 	 }
-	 
+
+
+	 @EventHandler
+	 public void postInit(FMLPostInitializationEvent event){
+		 //trying to add morph potions to a magic profession
+		 VillagerRegistry.VillagerProfession vp= ForgeRegistries.VILLAGER_PROFESSIONS.getValue(new ResourceLocation("structuresmod:magic_profession"));
+		 if(vp!=null){
+			 System.out.println("found magic profession");
+			 vp.getCareer(0).addTrade(1,new VillageTradeMagicMorphPotion1());
+			 vp.getCareer(0).addTrade(2,new VillageTradeMagicMorphPotion2());
+			 vp.getCareer(0).addTrade(3,new VillageTradeMagicMorphPotion3());
+		 }
+		 else{
+			 System.out.println("could not find magic profession");
+		 }
+	 }
 	 @Mod.EventHandler
 		public void serverLoad(FMLServerStartingEvent event){
 		
