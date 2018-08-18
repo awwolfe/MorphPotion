@@ -58,7 +58,7 @@ public class CapabilityHandler {
 		        	NBTTagCompound tag=new NBTTagCompound();
 		        	tag.setString("Name", mob.getName());
 		        	cap.setOriginalEntity(tag);
-		        	System.out.println("Mob constructed, setting original entity:"+mob.getName());
+//		        	System.out.println("Mob constructed, setting original entity:"+mob.getName());
 		            //this.sendAcquiredMorphs(cap, player);
 		        	
 //		            /* Ensure that player was morphed */

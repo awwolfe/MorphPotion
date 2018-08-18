@@ -66,9 +66,13 @@ public class ModMetaMorph {
 							//now deal with any shields
 							ItemStack shieldStack = event.player.inventory.offHandInventory.get(0);
 							if (shieldStack != ItemStack.EMPTY) {
-								if (!event.player.inventory.addItemStackToInventory(shieldStack)) {
-									event.player.entityDropItem(shieldStack, 0.5F);
-								}
+
+									if (!event.player.inventory.addItemStackToInventory(shieldStack)) {
+										event.player.entityDropItem(shieldStack, 0.5F);
+
+									}
+								event.player.inventory.offHandInventory.set(0,ItemStack.EMPTY);
+
 							}
 						}
 						//now deal with weapons
